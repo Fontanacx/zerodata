@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShieldCheck } from "@phosphor-icons/react";
+
 import { useI18n } from "@/lib/i18n";
 
 export function Navbar() {
@@ -25,7 +25,11 @@ export function Navbar() {
           href="/"
           className="flex items-center gap-2 text-white hover:text-[#cccccc] transition-colors duration-150 shrink-0"
         >
-          <ShieldCheck size={18} color="#00e5a0" weight="thin" />
+          <img
+            src="/ZeroData.ico"
+            alt="ZeroData"
+            className="w-5 h-5 rounded-sm flex-shrink-0"
+          />
           <span className="text-sm font-semibold tracking-tight">ZeroData</span>
         </Link>
 
