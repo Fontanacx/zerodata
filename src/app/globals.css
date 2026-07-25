@@ -42,6 +42,17 @@ body {
   color: var(--color-text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Prevent iOS Safari bounce from interfering with sticky navbar */
+  overscroll-behavior-y: none;
+}
+
+/* iOS Safari: prevent callout and improve tap response on interactive elements */
+button,
+label[role="button"],
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
 }
 
 ::selection {
