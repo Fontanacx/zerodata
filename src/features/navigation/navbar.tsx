@@ -30,9 +30,9 @@ export function Navbar() {
           <img
             src="/ZeroData.ico"
             alt="ZeroData"
-            className="w-5 h-5 sm:w-6 sm:h-6 rounded-sm flex-shrink-0"
+            className="w-6 h-6 sm:w-7 sm:h-7 rounded flex-shrink-0"
           />
-          <span className="text-xs sm:text-sm font-semibold tracking-tight">ZeroData</span>
+          <span className="text-sm font-semibold tracking-tight">ZeroData</span>
         </Link>
 
         <div className="flex items-center gap-1 sm:gap-1.5">

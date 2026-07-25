@@ -1,10 +1,3 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Fontanacx/zerodata/main/public/og-image.png">
-    <img alt="ZeroData" src="https://raw.githubusercontent.com/Fontanacx/zerodata/main/public/og-image.png" width="600">
-  </picture>
-</p>
-
 <h1 align="center">ZeroData</h1>
 <p align="center"><strong>Inspect &amp; strip image metadata. 100% client-side. Nothing leaves your device.</strong></p>
 <p align="center"><em>Inspeccioná y eliminá metadatos de imágenes. 100% en el cliente. Nada sale de tu dispositivo.</em></p>
