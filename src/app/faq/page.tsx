@@ -78,15 +78,25 @@ export default function FaqPage() {
 
       <footer className="border-t border-[#1a1a1a] bg-[#060606] px-6 py-8">
         <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-5">
-          <div className="flex items-center gap-2">
-            <span className="text-sm font-semibold text-white tracking-tight">
+          <a
+            href="https://fontanacdev.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 group"
+          >
+            <span className="text-sm font-semibold text-white tracking-tight group-hover:text-[#00e5a0] transition-colors">
               ZeroData
             </span>
-            <span className="text-xs text-[#777777]">
+            <span className="text-xs text-[#777777] group-hover:text-[#aaaaaa] transition-colors">
               {t("footer.developed")}{" "}
-              <span className="text-[#888888] font-medium">Fontanac</span>
+              <span className="text-[#aaaaaa] font-medium group-hover:text-white transition-colors">
+                Fontanac
+              </span>
+              <span className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity text-[#00e5a0]">
+                &#8599;
+              </span>
             </span>
-          </div>
+          </a>
 
           <div className="flex items-center gap-5 text-xs text-[#777777]">
             <span className="flex items-center gap-1.5">

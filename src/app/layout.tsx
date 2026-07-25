@@ -16,17 +16,17 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
-  title: "ZeroData — Image Metadata Remover",
+  metadataBase: new URL("https://zerodata-two.vercel.app"),
+  title: "ZeroData — Image Metadata Inspector & Remover",
   description:
-    "Strip EXIF, GPS, IPTC, XMP, and AI-generation metadata from images. 100% client-side. Nothing leaves your device.",
+    "Inspect and strip EXIF, GPS, IPTC, XMP, C2PA, and AI-generation metadata from JPEG, PNG, and WebP images. 100% client-side. Nothing leaves your device.",
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2300e5a0'/><text x='16' y='23' text-anchor='middle' font-size='20' font-weight='bold' fill='%23080808' font-family='system-ui'>Z</text></svg>",
+    icon: "/ZeroData.ico",
   },
   openGraph: {
-    title: "ZeroData — Image Metadata Remover",
+    title: "ZeroData — Image Metadata Inspector & Remover",
     description:
-      "Strip EXIF, GPS, IPTC, XMP, and AI-generation metadata from images. 100% client-side. Nothing leaves your device.",
+      "Inspect and strip EXIF, GPS, IPTC, XMP, C2PA, and AI-generation metadata from images. 100% client-side. Nothing leaves your device.",
   },
 };
 
