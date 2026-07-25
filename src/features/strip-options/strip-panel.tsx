@@ -55,6 +55,7 @@ export function StripPanel({
               key={cat.id}
               onClick={() => toggle(cat.id)}
               disabled={disabled || isStripping}
+              style={{ touchAction: "manipulation" }}
               className={`
                 w-full flex items-start gap-3 p-3 rounded-lg border text-left
                 transition-all duration-150 min-h-[52px]
@@ -98,6 +99,7 @@ export function StripPanel({
       <button
         onClick={onStrip}
         disabled={disabled || isStripping || selected.size === 0 || !hasMetadata}
+        style={{ touchAction: "manipulation" }}
         className="
           w-full flex items-center justify-center gap-2 py-3 rounded-lg
           text-sm font-medium transition-all duration-150

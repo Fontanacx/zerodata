@@ -91,10 +91,11 @@ export function UploadZone({ onFileRead, disabled }: UploadZoneProps) {
           }
         }}
         aria-label={t("upload.dragIdle")}
+        style={{ touchAction: "manipulation" }}
         className={`
           relative flex flex-col items-center justify-center
           border-2 border-dashed rounded-xl cursor-pointer
-          transition-all duration-200 p-12 sm:p-16 min-h-[280px] sm:min-h-[320px]
+          transition-all duration-200 p-8 sm:p-12 md:p-16 min-h-[220px] sm:min-h-[280px] md:min-h-[320px]
           focus-visible:outline-none focus-visible:border-[#00e5a0] focus-visible:bg-[#00e5a008]
           ${
             isDragOver
@@ -115,15 +116,15 @@ export function UploadZone({ onFileRead, disabled }: UploadZoneProps) {
         />
 
         {isDragOver ? (
-          <UploadSimple size={44} color="#00e5a0" weight="thin" />
+          <UploadSimple size={36} color="#00e5a0" weight="thin" className="sm:size-[44px]" />
         ) : (
-          <ImageIcon size={44} color="#555555" weight="thin" />
+          <ImageIcon size={36} color="#555555" weight="thin" className="sm:size-[44px]" />
         )}
 
-        <p className="mt-5 text-sm text-[#999999] font-medium">
+        <p className="mt-4 sm:mt-5 text-xs sm:text-sm text-[#999999] font-medium text-center px-2">
           {isDragOver ? t("upload.dragOver") : t("upload.dragIdle")}
         </p>
-        <p className="mt-1.5 text-xs text-[#777777]">
+        <p className="mt-1 sm:mt-1.5 text-[11px] sm:text-xs text-[#777777] text-center">
           {t("upload.formats")}
         </p>
         {error && (
